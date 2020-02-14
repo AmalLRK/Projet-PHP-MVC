@@ -65,6 +65,11 @@
     public function edit($EmployeeID, $NationalIDNumber, $ContactID,   
                          $Title, $BirthDate, $Gender, $HireDate)
     {
+     //UPDATE employee as E inner join contact as C on E.ContactID=C.ContactID left join employee as EM on
+     //E.ManagerID=EM.EmployeeID left join contact as CM on EM.ContactID=CM.ContactID SET E.NationalIDNumber='844973625', 
+     //E.LoginID='adventure-workssidney0', E.BirthDate='01-09-1961 00:00:00', E.MaritalStatus='M', E.Gender='M', 
+     //C.EmailAddress='HAMZA@adventure-works.com', 
+     //C.EmailPromotion='0', C.Phone='424-555-0189', E.Title='Production Technician - WC10' where E.EmployeeID=13
         $requete="update employee set  NationalIDNumber='".$NationalIDNumber."',ContactID= '".$ContactID."', Title='".$Title."', 
         BirthDate='".$BirthDate."', Gender='".$Gender."', HireDate='".$HireDate."' where EmployeeID=".$EmployeeID;
         //print_r($requete);
