@@ -1,0 +1,250 @@
+Partiel du 14 novembre 2015
+M1 – Semestre 1
+Page 1 MIAGE
+Bases de données réparties
+A - Le cours :
+1. Quel est le contenu du cours?
+Les Architectures Client-Serveur (principes généraux, mise en œuvre)
+Développement d’applications pour le Web
+Optimisation (requêtes SQL, Implémentation)
+Bases de données pour le WEB (du Client-Serveur traditionnel au Web CS, évolution des architectures)
+Bases de données réparties
+La documentation d’un projet
+2. Quelles sont les compétences à acquérir dans le cadre de ce cours?
+Appliquer une méthode de conception
+Identifier les différentes architectures Client-Serveur
+Proposer et mettre en œuvre une solution pour le WEB
+Utiliser un atelier de génie logiciel pour la conception
+Réaliser une application basée sur l’utilisation d’une base de données répartie et rédiger la
+documentation d’un projet (cahier des charges, dossier de conception, dossier de programmation,
+tests…)
+B - Système d'information
+3. Donnez une définition simplifiée d'un système d'information
+SI = Acteurs + Processus + données
+4. Définissez et explicitez le terme MOE
+MOE = Maitrise d’Œuvre. C’est la maitrise d’œuvre qui réalise, qui produit le livrable.
+5. Définissez et explicitez le terme MOA
+MOA = Maitrise d’Ouvrage. C’est la maitrise d’ouvrage qui passe commande du livrable, qui définit son
+besoin, mandate la MOE, et paye pour le travail réalisé.
+6. Définissez ce qu'est l'architecture d'un SI
+L'architecture d'un système d’information c'est :
+• La représentation de l’organisation d'un système
+• Une définition de ses composants constitutifs
+• Une caractérisation de leurs relations (internes, externes)
+• … et les principes régissant conception et évolution !
+C - Urbanisation
+7. Expliquez à l'aide d'un exemple la nécessité d'urbaniser le système d'information
+Exemple fourni en cours de la zone commerciale : pour implanter une zone commerciale il faut tout
+d’abord choisir l’emplacement en fonction des besoins, et adapté l’ensemble des ressources aux besoins
+de la zone complète, que ce soit en terme d’électricité, d’eau, d’évacuation d’eau, d’infrastructure
+routière, … le tout en adéquation avec l’existant. 
+Partiel du 14 novembre 2015
+M1 – Semestre 1
+Page 2 MIAGE
+Bases de données réparties
+Le fait d’identifier les besoins, de les calibrer, et d’adapter l’ensemble de la solution au SI existant peut
+être considérer comme de l’urbanisation.
+8. Présentez, à l'aide d'un schéma, les différentes vues d'un SI urbanisé
+9. Nommez une telle représentation
+On peut classer ce schéma dans la catégorie des cartographies.
+D – Client/Serveur
+10. Donnez un exemple de modèle d'architecture ayant existé avant l'apparition du modèle Client/Serveur
+Ordinateur central / Host / Mainframe
+Serveur = Ordinateur central qui effectue tous les traitements
+Client = Terminal sans puissance locale de traitement
+11. Placez-le dans le temps
+1960 – 1970 
+Partiel du 14 novembre 2015
+M1 – Semestre 1
+Page 3 MIAGE
+Bases de données réparties
+12. Donnez une définition de Client/Serveur
+• Version 1 :
+o Client = consommateur de service = demandeur
+o Serveur = producteur de service = fournisseur
+• Version 2 :
+o Le terme SERVEUR fait référence à tout processus qui reçoit une demande de service
+(requête) venant d'un client via un réseau, traite cette demande et renvoie le résultat
+(réponse) au demandeur (le CLIENT).
+• Version 3
+o CLIENT : Processus qui demande l'exécution d'une opération par l'envoi d'une demande.
+o SERVEUR : Processus qui exécute la demande du client et qui transmet la réponse.
+13. Quels sont les principes de base du Client/Serveur?
+• Principe 1 : Rendre l'architecture matérielle transparente vis à vis des développeurs et des
+utilisateurs finaux.
+o Accepter l’hétérogénéité de l’architecture
+• Principe 2 : Utiliser au mieux les ressources matérielles fournies par l’ensemble de
+l’infrastructure.
+• Principe 3 : Rendre la localisation des ressources indépendantes de l’architecture
+14. Comment structure-t-on classiquement une application en mode Client/Serveur?
+Présentation – Traitement - Données
+E – Middleware
+15. Donnez une définition de middleware
+• Version 1
+o L'ensemble des services logiciels construits au-dessus d'un protocole de transport afin de
+permettre l'échange de requêtes et des réponses associées entre client et serveur de
+manière transparente.
+• Version 2
+o C'est la partie logicielle qui gère la communication entre le poste client et le poste
+serveur
+ C'est un IPC: Inter-Processus Communication
+ Couches 5,6 et 7 du modèle OSI
+ Assure la mise en forme des données pour la couche 4
+ Gère le dialogue (l'envoi des requêtes et des résultats)
+16. Pourquoi un middleware?
+Réduire la complexité du dialogue client/serveur. Cette complexité est due à
+• Des Systèmes hétérogènes
+• Des Systèmes propriétaires
+• La distance 
+Partiel du 14 novembre 2015
+M1 – Semestre 1
+Page 4 MIAGE
+Bases de données réparties
+17. IPC = API + FAP. Définissez l'un des termes de cette équation, et précisez en l'usage/l'utilité.
+• API = Application Programming Interface (Interface de programmation au niveau applicatif)
+o C'est l'ensemble des fonctions qui permettent au poste client de réclamer un service
+ Demande de connexion/déconnexion avec le serveur
+ transfert des requêtes
+ réception des résultats
+• FAP = Format And Protocols (Protocoles de communication et format des données)
+o Formate la requête en provenance de l'API puis récupère la trame et l'adresse à l'API
+o Maintien de la session avec le serveur (synchronisation)
+ Effectue la synchronisation entre client et serveur,
+o Gère la reconnaissance du format des données échangées
+o L'appel aux fonctions de transport du réseau.
+
+18. Quels sont les modes de communications possibles?
+• Mode non connecté (asynchrone)
+o Client peut continuer à travailler
+o Etablissement d’une session
+o Dialogue sous forme de messages
+• Mode connecté (synchrone)
+o Client est bloqué en attente du résultat
+o Dialogue sous forme de RPC - Remote Procedure Call
+19. RPC, kezako?
+RPC = Remote Procedure Call - le dialogue sans connexion 
+Partiel du 14 novembre 2015
+M1 – Semestre 1
+Page 5 MIAGE
+Bases de données réparties
+F – LAMP
+20. Explicitez le terme LAMP
+Linux – Apache – MySQL – PHP
+21. Présentez, à l'aide d'un schéma clair et détaillé, le traitement d'une requête http dans un
+environnement de type LAMP
+22. Est-ce qu'il est possible de faire fonctionner un système de type LAMP sous Windows? Si oui,
+comment?
+Oui car Apache, MySQL et PHP sont « portables ».
+On parle alors de système WAMP, le W de Windows remplaçant le L de Linux.
+Il est donc possible d’installer indépendamment chaque composant (Apache, MySQL et PHP) ou de
+s’appuyer sur des outils packageant le tout, notamment dans le cadre d’environnement de
+développement : WAMP, XAMPP, EASYPHP, … remplissent ce rôle de bundle.
+23. Quel est l'outil le plus couramment utilisé pour gérer, accéder à la base de données d'un système de
+type LAMP?
+Phpmyadmin
+? MySQL Workbench ?
+G – Méthodes de développement
+24. Quelles sont les méthodes de développement que vous connaissez?
+Vas-y code
+En cascade
+Cycle en V
+Cycle en W
+En spirale
+Agile (scrumb, …)
+25. Définissez les 4 préceptes du manifeste Agile
+Une équipe de dev heureuse - Les individus et leurs interactions plus que les processus et les outils.
+Une application qui tourne - Du logiciel qui fonctionne plus qu’une documentation exhaustive.
+Des clients contents - La collaboration avec les clients plus que la négociation contractuelle. 
+Partiel du 14 novembre 2015
+M1 – Semestre 1
+Page 6 MIAGE
+Bases de données réparties
+De la souplesse - L’adaptation au changement plus que le suivi d’un plan.
+H - PHP
+26. Pourquoi je ne peux pas double cliquer sur une page PHP pour l'exécuter?
+Car PHP est un langage interprété. Il nécessite un interpréteur.
+27. Est-ce qu'il est absolument nécessaire d'avoir apache pour exécuter une page PHP?
+Non, même si la plupart du temps le but d’un script php est de générer une page HTML, il est aussi
+possible d’utiliser ce langage pour développer des traitements batchs, à fortiori si le traitement en
+question utilise des objets utilisé par une application Web/PHP.
+La seule chose dont on a besoin c’est … l’interpréteur PHP.
+28. Quels sont des langages de développement comparable à PHP?
+ASP / ASP.NET
+JSP / J2EE
+Python
+Ruby
+Javascript (AngularJS / NodeJS / …)
+29. Citez 3 framework PHP
+Zend Framework
+CakePHP
+Symphony2
+CodeIgniter / Laravel
+Joomla
+Jelix
+…
+30. Au fait, ça sert à quoi un framework?
+Un framework est un ensemble d'outils et de composants logiciels organisés conformément à un plan
+d'architecture et des patterns, l'ensemble formant ou promouvant éventuellement un « squelette » de
+programme.
+L’objectif est de pouvoir s’appuyer sur un ensemble existant de fonctions, déjà codées/testées/… afin de
+ne pas avoir à recoder ces fonctions, et ainsi gagner du temps. Ne réinventons pas la roue.
+31. Quels sont les types de bases du PHP?
+PHP n’est pas un langage typé. Il n’existe donc aucun type de base.
+Une variable peut « passer » d’un type à un autre au gré de son utilisation.
+32. Produire le code PHP permettant de saisir un prénom sur une page web et d'afficher le message
+suivant: "Bonjour PRENOM, vous exécutez cette page depuis l'adresse ip AAA.BBB.CCC.DDD."
+Note: REMOTE_ADDR est un paramètre qui pourra vous être utile. 
+Partiel du 14 novembre 2015
+M1 – Semestre 1
+Page 7 MIAGE
+Bases de données réparties
+question32.php
+<!doctype html>
+<html lang="fr">
+<head>
+ <title>Question 32</title>
+ <meta charset="utf-8">
+</head>
+<body>
+<?php
+ if (($_SERVER["REQUEST_METHOD"] == "POST") && isset($_POST["prenom"]) ) {
+?>
+ <p>
+ Bonjour <?php echo htmlspecialchars($_POST["prenom"]); ?>
+ , vous exécutez cette page depuis l'adresse ip <?= $_SERVER['REMOTE_ADDR']; ?>
+ <br/>
+ <a href="<?= htmlspecialchars($_SERVER['PHP_SELF']);?>">Recommencer</a>
+ </p>
+<?php
+} else {
+?>
+ <form method="post" action="<?= htmlspecialchars($_SERVER['PHP_SELF']);?>">
+ Prénom: <input type="text" name="prenom" /><br/>
+ <input type="submit" value="OK"/>
+ </form>
+<?php
+}
+?>
+</body>
+</html>
+Partiel du 14 novembre 2015
+M1 – Semestre 1
+Page 8 MIAGE
+Bases de données réparties
+I– SQL
+Soit la table suivante:
+Lumiere
+film Bienvenue chez les Ch'tis
+pays FR
+annee 2008
+realisateurs Dany Boon
+entrees 25520109
+33. Que va afficher la requête suivante
+SELECT DISTINCT `realisateurs` FROM `Lumiere` where `annee` IN (2008,2010)
+La liste des réalisateurs (sans doublons) ayant réalisé un film produit soit en 2008 soit en 2010.
+34. Ecrivez la requête SQL qui permet d'afficher le nombre d'entrée total fait par réalisateur.
+ Le résultat devra être trié du plus grand au plus petit nombre d'entrées.
+SELECT `realisateurs`, SUM(`entrees`) as NbEntreesTotales
+FROM `Lumiere`
+GROUP BY `realisateurs`
+ORDER BY SUM(`entrees`) DESC ; 
