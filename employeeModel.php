@@ -3,17 +3,22 @@
     public function construct(){}
     //add employee or contact ??
     //add employee sachant que idcontact exist deja,id contact combobox ??
-    public function add($EmployeeID, $NationalIDNumber, $ContactID,   
-                         $Title, $BirthDate, $Gender, $HireDate)
+    public function add($ContactID,$ContactTitle,$FirstName,$LastName,$EmailAddress,
+                      $EmployeeID, $NationalIDNumber,$EmployeeTitle, $BirthDate, $Gender, $HireDate)
     {
-        $requete="INSERT INTO `employee` (`EmployeeID`, `NationalIDNumber`, `ContactID`,`Title`, `BirthDate`, `Gender`, `HireDate`)
-         VALUES ('$EmployeeID', '$NationalIDNumber', '$ContactID', '$Title', '$BirthDate', '$Gender', '$HireDate')";
-        //print_r($requete);
         try{
-         $db=new pdo('mysql:host=localhost;dbname=adw;charset=utf8','root','');
-         $resultat=$db->prepare($requete);    
-        
-         return $resultat->execute();
+        $db=new pdo('mysql:host=localhost;dbname=adw;charset=utf8','root','');
+        $requete="INSERT INTO `contact` (`ContactID`, `Title`, `FirstName`,`LastName`, `EmailAddress`)
+        VALUES ('$ContactID', '$ContactTitle', '$FirstName', '$LastName', '$EmailAddress')";
+        $resultat=$db->prepare($requete);
+            if($resultat->execute())
+            {
+                $requete="INSERT INTO `employee` (`EmployeeID`, `NationalIDNumber`, `ContactID`,`Title`, `BirthDate`, `Gender`, `HireDate`)
+                VALUES ('$EmployeeID', '$NationalIDNumber', '$ContactID', '$EmployeeTitle', '$BirthDate', '$Gender', '$HireDate')";
+                $resultat=$db->prepare($requete); 
+                return $resultat->execute();
+            }
+                
         }
         catch(PDOException $Ex)
         {
@@ -62,17 +67,13 @@
         die();
         }
     }
-    public function edit($EmployeeID, $NationalIDNumber, $ContactID,   
-                         $Title, $BirthDate, $Gender, $HireDate)
+    public function edit($ContactID,$ContactTitle,$FirstName,$LastName,$EmailAddress,
+    $EmployeeID, $NationalIDNumber,$EmployeeTitle, $BirthDate, $Gender, $HireDate)
     {
-     //UPDATE employee as E inner join contact as C on E.ContactID=C.ContactID left join employee as EM on
-     //E.ManagerID=EM.EmployeeID left join contact as CM on EM.ContactID=CM.ContactID SET E.NationalIDNumber='844973625', 
-     //E.LoginID='adventure-workssidney0', E.BirthDate='01-09-1961 00:00:00', E.MaritalStatus='M', E.Gender='M', 
-     //C.EmailAddress='HAMZA@adventure-works.com', 
-     //C.EmailPromotion='0', C.Phone='424-555-0189', E.Title='Production Technician - WC10' where E.EmployeeID=13
-        $requete="update employee set  NationalIDNumber='".$NationalIDNumber."',ContactID= '".$ContactID."', Title='".$Title."', 
-        BirthDate='".$BirthDate."', Gender='".$Gender."', HireDate='".$HireDate."' where EmployeeID=".$EmployeeID;
-        //print_r($requete);
+        $requete="UPDATE employee as E inner join contact as C on E.ContactID=C.ContactID left join employee as EM on
+        E.ManagerID=EM.EmployeeID left join contact as CM on EM.ContactID=CM.ContactID SET E.NationalIDNumber='$NationalIDNumber', 
+        E.BirthDate='$BirthDate', E.Gender='$Gender', C.EmailAddress='$EmailAddress', E.Title='$EmployeeTitle', C.Title='$ContactTitle' 
+        , FirstName='$FirstName', E.LastName='$LastName', E.LastName='$LastName', E.HireDate='$HireDate' where E.EmployeeID=".$EmployeeID;
 
         try{
          $db=new pdo('mysql:host=localhost;dbname=adw;charset=utf8','root','');
@@ -85,6 +86,26 @@
         die();
         }
     }
+
+        public function listEmpCont($id)
+        {
+        $requete='select E.EmployeeID, E.NationalIDNumber,E.Title as ETitle,E.HireDate,E.BirthDate,
+        C.ContactID,C.Title as CTitle, C.FirstName, C.LastName, C.EmailAddress from employee as E
+        inner join contact as C 
+        on E.ContactID=C.ContactID
+        where E.EmployeeID='.$id;
+        try{
+            $db=new pdo('mysql:host=localhost;dbname=adw;charset=utf8','root','');
+            $resultat=$db->prepare($requete);
+            $resultat->execute();
+            return $resultat->fetch(PDO::FETCH_OBJ);
+        }
+        catch(PDOException $Ex)
+        {
+        print "Erreur !: " . $e->getMessage() . "<br/>";
+        die();
+        }
+        }
     public function delete($id)
     {
         $requete='delete from employee where EmployeeID='.$id;

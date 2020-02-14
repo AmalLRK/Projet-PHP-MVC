@@ -13,7 +13,8 @@ class employeeController{
         {
             require_once MODELS.DS."employeeModel.php";
             $employeeModel =new employeeModel();
-            if ($employeeModel->add($_POST["EmployeeID"], $_POST["ContactID"], $_POST["NationalIDNumber"], $_POST["Title"], $_POST["BirthDate"],$_POST["Gender"],$_POST["HireDate"]))
+            if ($employeeModel->add($_POST["ContactID"],$_POST["ContactTitle"],$_POST["FirstName"],$_POST["LastName"],$_POST["EmailAddress"]
+            ,$_POST["EmployeeID"], $_POST["NationalIDNumber"], $_POST["EmployeeTitle"], $_POST["BirthDate"],$_POST["Gender"],$_POST["HireDate"]))
             {
                 //return $this->list();
                 //header("Location: " . ROOT .DS. "router.php");
@@ -44,15 +45,17 @@ class employeeController{
     }
     public function edit($id){
 
-        //die(print_r($_POST));
+        print_r($id);
         require_once MODELS.DS.'employeeModel.php';
         $employeeModel =new employeeModel();
-        $employee=$employeeModel->listone($id);
+        $employee=$employeeModel->listEmpCont($id);
+        print_r($employee);
         require_once CLASSES.DS.'renderView.php';
         $v=new renderView();
         if (isset($_POST["EmployeeID"]))
         {
-                if($employeeModel->edit($_POST["EmployeeID"], $_POST["ContactID"],$_POST["NationalIDNumber"], $_POST["Title"], $_POST["BirthDate"],$_POST["Gender"],$_POST["HireDate"]))
+                if($employeeModel->edit($_POST["ContactID"],$_POST["ContactTitle"],$_POST["FirstName"],$_POST["LastName"],$_POST["EmailAddress"]
+                ,$_POST["EmployeeID"], $_POST["NationalIDNumber"], $_POST["EmployeeTitle"], $_POST["BirthDate"],$_POST["Gender"],$_POST["HireDate"]))
                 {
                     $v->render('home','index');
                 }
