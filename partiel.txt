@@ -1,179 +1,179 @@
 Partiel du 14 novembre 2015
-M1 – Semestre 1
+M1 â€“ Semestre 1
 Page 1 MIAGE
-Bases de données réparties
+Bases de donnÃ©es rÃ©parties
 A - Le cours :
 1. Quel est le contenu du cours?
-Les Architectures Client-Serveur (principes généraux, mise en œuvre)
-Développement d’applications pour le Web
-Optimisation (requêtes SQL, Implémentation)
-Bases de données pour le WEB (du Client-Serveur traditionnel au Web CS, évolution des architectures)
-Bases de données réparties
-La documentation d’un projet
-2. Quelles sont les compétences à acquérir dans le cadre de ce cours?
-Appliquer une méthode de conception
-Identifier les différentes architectures Client-Serveur
-Proposer et mettre en œuvre une solution pour le WEB
-Utiliser un atelier de génie logiciel pour la conception
-Réaliser une application basée sur l’utilisation d’une base de données répartie et rédiger la
-documentation d’un projet (cahier des charges, dossier de conception, dossier de programmation,
-tests…)
-B - Système d'information
-3. Donnez une définition simplifiée d'un système d'information
-SI = Acteurs + Processus + données
-4. Définissez et explicitez le terme MOE
-MOE = Maitrise d’Œuvre. C’est la maitrise d’œuvre qui réalise, qui produit le livrable.
-5. Définissez et explicitez le terme MOA
-MOA = Maitrise d’Ouvrage. C’est la maitrise d’ouvrage qui passe commande du livrable, qui définit son
-besoin, mandate la MOE, et paye pour le travail réalisé.
-6. Définissez ce qu'est l'architecture d'un SI
-L'architecture d'un système d’information c'est :
-• La représentation de l’organisation d'un système
-• Une définition de ses composants constitutifs
-• Une caractérisation de leurs relations (internes, externes)
-• … et les principes régissant conception et évolution !
+Les Architectures Client-Serveur (principes gÃ©nÃ©raux, mise en Å“uvre)
+DÃ©veloppement dâ€™applications pour le Web
+Optimisation (requÃªtes SQL, ImplÃ©mentation)
+Bases de donnÃ©es pour le WEB (du Client-Serveur traditionnel au Web CS, Ã©volution des architectures)
+Bases de donnÃ©es rÃ©parties
+La documentation dâ€™un projet
+2. Quelles sont les compÃ©tences Ã  acquÃ©rir dans le cadre de ce cours?
+Appliquer une mÃ©thode de conception
+Identifier les diffÃ©rentes architectures Client-Serveur
+Proposer et mettre en Å“uvre une solution pour le WEB
+Utiliser un atelier de gÃ©nie logiciel pour la conception
+RÃ©aliser une application basÃ©e sur lâ€™utilisation dâ€™une base de donnÃ©es rÃ©partie et rÃ©diger la
+documentation dâ€™un projet (cahier des charges, dossier de conception, dossier de programmation,
+testsâ€¦)
+B - SystÃ¨me d'information
+3. Donnez une dÃ©finition simplifiÃ©e d'un systÃ¨me d'information
+SI = Acteurs + Processus + donnÃ©es
+4. DÃ©finissez et explicitez le terme MOE
+MOE = Maitrise dâ€™Å’uvre. Câ€™est la maitrise dâ€™Å“uvre qui rÃ©alise, qui produit le livrable.
+5. DÃ©finissez et explicitez le terme MOA
+MOA = Maitrise dâ€™Ouvrage. Câ€™est la maitrise dâ€™ouvrage qui passe commande du livrable, qui dÃ©finit son
+besoin, mandate la MOE, et paye pour le travail rÃ©alisÃ©.
+6. DÃ©finissez ce qu'est l'architecture d'un SI
+L'architecture d'un systÃ¨me dâ€™information c'est :
+â€¢ La reprÃ©sentation de lâ€™organisation d'un systÃ¨me
+â€¢ Une dÃ©finition de ses composants constitutifs
+â€¢ Une caractÃ©risation de leurs relations (internes, externes)
+â€¢ â€¦ et les principes rÃ©gissant conception et Ã©volution !
 C - Urbanisation
-7. Expliquez à l'aide d'un exemple la nécessité d'urbaniser le système d'information
+7. Expliquez Ã  l'aide d'un exemple la nÃ©cessitÃ© d'urbaniser le systÃ¨me d'information
 Exemple fourni en cours de la zone commerciale : pour implanter une zone commerciale il faut tout
-d’abord choisir l’emplacement en fonction des besoins, et adapté l’ensemble des ressources aux besoins
-de la zone complète, que ce soit en terme d’électricité, d’eau, d’évacuation d’eau, d’infrastructure
-routière, … le tout en adéquation avec l’existant. 
+dâ€™abord choisir lâ€™emplacement en fonction des besoins, et adaptÃ© lâ€™ensemble des ressources aux besoins
+de la zone complÃ¨te, que ce soit en terme dâ€™Ã©lectricitÃ©, dâ€™eau, dâ€™Ã©vacuation dâ€™eau, dâ€™infrastructure
+routiÃ¨re, â€¦ le tout en adÃ©quation avec lâ€™existant. 
 Partiel du 14 novembre 2015
-M1 – Semestre 1
+M1 â€“ Semestre 1
 Page 2 MIAGE
-Bases de données réparties
-Le fait d’identifier les besoins, de les calibrer, et d’adapter l’ensemble de la solution au SI existant peut
-être considérer comme de l’urbanisation.
-8. Présentez, à l'aide d'un schéma, les différentes vues d'un SI urbanisé
-9. Nommez une telle représentation
-On peut classer ce schéma dans la catégorie des cartographies.
-D – Client/Serveur
-10. Donnez un exemple de modèle d'architecture ayant existé avant l'apparition du modèle Client/Serveur
+Bases de donnÃ©es rÃ©parties
+Le fait dâ€™identifier les besoins, de les calibrer, et dâ€™adapter lâ€™ensemble de la solution au SI existant peut
+Ãªtre considÃ©rer comme de lâ€™urbanisation.
+8. PrÃ©sentez, Ã  l'aide d'un schÃ©ma, les diffÃ©rentes vues d'un SI urbanisÃ©
+9. Nommez une telle reprÃ©sentation
+On peut classer ce schÃ©ma dans la catÃ©gorie des cartographies.
+D â€“ Client/Serveur
+10. Donnez un exemple de modÃ¨le d'architecture ayant existÃ© avant l'apparition du modÃ¨le Client/Serveur
 Ordinateur central / Host / Mainframe
 Serveur = Ordinateur central qui effectue tous les traitements
 Client = Terminal sans puissance locale de traitement
 11. Placez-le dans le temps
-1960 – 1970 
+1960 â€“ 1970 
 Partiel du 14 novembre 2015
-M1 – Semestre 1
+M1 â€“ Semestre 1
 Page 3 MIAGE
-Bases de données réparties
-12. Donnez une définition de Client/Serveur
-• Version 1 :
+Bases de donnÃ©es rÃ©parties
+12. Donnez une dÃ©finition de Client/Serveur
+â€¢ Version 1 :
 o Client = consommateur de service = demandeur
 o Serveur = producteur de service = fournisseur
-• Version 2 :
-o Le terme SERVEUR fait référence à tout processus qui reçoit une demande de service
-(requête) venant d'un client via un réseau, traite cette demande et renvoie le résultat
-(réponse) au demandeur (le CLIENT).
-• Version 3
-o CLIENT : Processus qui demande l'exécution d'une opération par l'envoi d'une demande.
-o SERVEUR : Processus qui exécute la demande du client et qui transmet la réponse.
+â€¢ Version 2 :
+o Le terme SERVEUR fait rÃ©fÃ©rence Ã  tout processus qui reÃ§oit une demande de service
+(requÃªte) venant d'un client via un rÃ©seau, traite cette demande et renvoie le rÃ©sultat
+(rÃ©ponse) au demandeur (le CLIENT).
+â€¢ Version 3
+o CLIENT : Processus qui demande l'exÃ©cution d'une opÃ©ration par l'envoi d'une demande.
+o SERVEUR : Processus qui exÃ©cute la demande du client et qui transmet la rÃ©ponse.
 13. Quels sont les principes de base du Client/Serveur?
-• Principe 1 : Rendre l'architecture matérielle transparente vis à vis des développeurs et des
+â€¢ Principe 1 : Rendre l'architecture matÃ©rielle transparente vis Ã  vis des dÃ©veloppeurs et des
 utilisateurs finaux.
-o Accepter l’hétérogénéité de l’architecture
-• Principe 2 : Utiliser au mieux les ressources matérielles fournies par l’ensemble de
-l’infrastructure.
-• Principe 3 : Rendre la localisation des ressources indépendantes de l’architecture
+o Accepter lâ€™hÃ©tÃ©rogÃ©nÃ©itÃ© de lâ€™architecture
+â€¢ Principe 2 : Utiliser au mieux les ressources matÃ©rielles fournies par lâ€™ensemble de
+lâ€™infrastructure.
+â€¢ Principe 3 : Rendre la localisation des ressources indÃ©pendantes de lâ€™architecture
 14. Comment structure-t-on classiquement une application en mode Client/Serveur?
-Présentation – Traitement - Données
-E – Middleware
-15. Donnez une définition de middleware
-• Version 1
+PrÃ©sentation â€“ Traitement - DonnÃ©es
+E â€“ Middleware
+15. Donnez une dÃ©finition de middleware
+â€¢ Version 1
 o L'ensemble des services logiciels construits au-dessus d'un protocole de transport afin de
-permettre l'échange de requêtes et des réponses associées entre client et serveur de
-manière transparente.
-• Version 2
-o C'est la partie logicielle qui gère la communication entre le poste client et le poste
+permettre l'Ã©change de requÃªtes et des rÃ©ponses associÃ©es entre client et serveur de
+maniÃ¨re transparente.
+â€¢ Version 2
+o C'est la partie logicielle qui gÃ¨re la communication entre le poste client et le poste
 serveur
  C'est un IPC: Inter-Processus Communication
- Couches 5,6 et 7 du modèle OSI
- Assure la mise en forme des données pour la couche 4
- Gère le dialogue (l'envoi des requêtes et des résultats)
+ Couches 5,6 et 7 du modÃ¨le OSI
+ Assure la mise en forme des donnÃ©es pour la couche 4
+ GÃ¨re le dialogue (l'envoi des requÃªtes et des rÃ©sultats)
 16. Pourquoi un middleware?
-Réduire la complexité du dialogue client/serveur. Cette complexité est due à
-• Des Systèmes hétérogènes
-• Des Systèmes propriétaires
-• La distance 
+RÃ©duire la complexitÃ© du dialogue client/serveur. Cette complexitÃ© est due Ã 
+â€¢ Des SystÃ¨mes hÃ©tÃ©rogÃ¨nes
+â€¢ Des SystÃ¨mes propriÃ©taires
+â€¢ La distance 
 Partiel du 14 novembre 2015
-M1 – Semestre 1
+M1 â€“ Semestre 1
 Page 4 MIAGE
-Bases de données réparties
-17. IPC = API + FAP. Définissez l'un des termes de cette équation, et précisez en l'usage/l'utilité.
-• API = Application Programming Interface (Interface de programmation au niveau applicatif)
-o C'est l'ensemble des fonctions qui permettent au poste client de réclamer un service
- Demande de connexion/déconnexion avec le serveur
- transfert des requêtes
- réception des résultats
-• FAP = Format And Protocols (Protocoles de communication et format des données)
-o Formate la requête en provenance de l'API puis récupère la trame et l'adresse à l'API
+Bases de donnÃ©es rÃ©parties
+17. IPC = API + FAP. DÃ©finissez l'un des termes de cette Ã©quation, et prÃ©cisez en l'usage/l'utilitÃ©.
+â€¢ API = Application Programming Interface (Interface de programmation au niveau applicatif)
+o C'est l'ensemble des fonctions qui permettent au poste client de rÃ©clamer un service
+ Demande de connexion/dÃ©connexion avec le serveur
+ transfert des requÃªtes
+ rÃ©ception des rÃ©sultats
+â€¢ FAP = Format And Protocols (Protocoles de communication et format des donnÃ©es)
+o Formate la requÃªte en provenance de l'API puis rÃ©cupÃ¨re la trame et l'adresse Ã  l'API
 o Maintien de la session avec le serveur (synchronisation)
  Effectue la synchronisation entre client et serveur,
-o Gère la reconnaissance du format des données échangées
-o L'appel aux fonctions de transport du réseau.
+o GÃ¨re la reconnaissance du format des donnÃ©es Ã©changÃ©es
+o L'appel aux fonctions de transport du rÃ©seau.
 
 18. Quels sont les modes de communications possibles?
-• Mode non connecté (asynchrone)
-o Client peut continuer à travailler
-o Etablissement d’une session
+â€¢ Mode non connectÃ© (asynchrone)
+o Client peut continuer Ã  travailler
+o Etablissement dâ€™une session
 o Dialogue sous forme de messages
-• Mode connecté (synchrone)
-o Client est bloqué en attente du résultat
+â€¢ Mode connectÃ© (synchrone)
+o Client est bloquÃ© en attente du rÃ©sultat
 o Dialogue sous forme de RPC - Remote Procedure Call
 19. RPC, kezako?
 RPC = Remote Procedure Call - le dialogue sans connexion 
 Partiel du 14 novembre 2015
-M1 – Semestre 1
+M1 â€“ Semestre 1
 Page 5 MIAGE
-Bases de données réparties
-F – LAMP
+Bases de donnÃ©es rÃ©parties
+F â€“ LAMP
 20. Explicitez le terme LAMP
-Linux – Apache – MySQL – PHP
-21. Présentez, à l'aide d'un schéma clair et détaillé, le traitement d'une requête http dans un
+Linux â€“ Apache â€“ MySQL â€“ PHP
+21. PrÃ©sentez, Ã  l'aide d'un schÃ©ma clair et dÃ©taillÃ©, le traitement d'une requÃªte http dans un
 environnement de type LAMP
-22. Est-ce qu'il est possible de faire fonctionner un système de type LAMP sous Windows? Si oui,
+22. Est-ce qu'il est possible de faire fonctionner un systÃ¨me de type LAMP sous Windows? Si oui,
 comment?
-Oui car Apache, MySQL et PHP sont « portables ».
-On parle alors de système WAMP, le W de Windows remplaçant le L de Linux.
-Il est donc possible d’installer indépendamment chaque composant (Apache, MySQL et PHP) ou de
-s’appuyer sur des outils packageant le tout, notamment dans le cadre d’environnement de
-développement : WAMP, XAMPP, EASYPHP, … remplissent ce rôle de bundle.
-23. Quel est l'outil le plus couramment utilisé pour gérer, accéder à la base de données d'un système de
+Oui car Apache, MySQL et PHP sont Â« portables Â».
+On parle alors de systÃ¨me WAMP, le W de Windows remplaÃ§ant le L de Linux.
+Il est donc possible dâ€™installer indÃ©pendamment chaque composant (Apache, MySQL et PHP) ou de
+sâ€™appuyer sur des outils packageant le tout, notamment dans le cadre dâ€™environnement de
+dÃ©veloppement : WAMP, XAMPP, EASYPHP, â€¦ remplissent ce rÃ´le de bundle.
+23. Quel est l'outil le plus couramment utilisÃ© pour gÃ©rer, accÃ©der Ã  la base de donnÃ©es d'un systÃ¨me de
 type LAMP?
 Phpmyadmin
 ? MySQL Workbench ?
-G – Méthodes de développement
-24. Quelles sont les méthodes de développement que vous connaissez?
+G â€“ MÃ©thodes de dÃ©veloppement
+24. Quelles sont les mÃ©thodes de dÃ©veloppement que vous connaissez?
 Vas-y code
 En cascade
 Cycle en V
 Cycle en W
 En spirale
-Agile (scrumb, …)
-25. Définissez les 4 préceptes du manifeste Agile
-Une équipe de dev heureuse - Les individus et leurs interactions plus que les processus et les outils.
-Une application qui tourne - Du logiciel qui fonctionne plus qu’une documentation exhaustive.
-Des clients contents - La collaboration avec les clients plus que la négociation contractuelle. 
+Agile (scrumb, â€¦)
+25. DÃ©finissez les 4 prÃ©ceptes du manifeste Agile
+Une Ã©quipe de dev heureuse - Les individus et leurs interactions plus que les processus et les outils.
+Une application qui tourne - Du logiciel qui fonctionne plus quâ€™une documentation exhaustive.
+Des clients contents - La collaboration avec les clients plus que la nÃ©gociation contractuelle. 
 Partiel du 14 novembre 2015
-M1 – Semestre 1
+M1 â€“ Semestre 1
 Page 6 MIAGE
-Bases de données réparties
-De la souplesse - L’adaptation au changement plus que le suivi d’un plan.
+Bases de donnÃ©es rÃ©parties
+De la souplesse - Lâ€™adaptation au changement plus que le suivi dâ€™un plan.
 H - PHP
-26. Pourquoi je ne peux pas double cliquer sur une page PHP pour l'exécuter?
-Car PHP est un langage interprété. Il nécessite un interpréteur.
-27. Est-ce qu'il est absolument nécessaire d'avoir apache pour exécuter une page PHP?
-Non, même si la plupart du temps le but d’un script php est de générer une page HTML, il est aussi
-possible d’utiliser ce langage pour développer des traitements batchs, à fortiori si le traitement en
-question utilise des objets utilisé par une application Web/PHP.
-La seule chose dont on a besoin c’est … l’interpréteur PHP.
-28. Quels sont des langages de développement comparable à PHP?
+26. Pourquoi je ne peux pas double cliquer sur une page PHP pour l'exÃ©cuter?
+Car PHP est un langage interprÃ©tÃ©. Il nÃ©cessite un interprÃ©teur.
+27. Est-ce qu'il est absolument nÃ©cessaire d'avoir apache pour exÃ©cuter une page PHP?
+Non, mÃªme si la plupart du temps le but dâ€™un script php est de gÃ©nÃ©rer une page HTML, il est aussi
+possible dâ€™utiliser ce langage pour dÃ©velopper des traitements batchs, Ã  fortiori si le traitement en
+question utilise des objets utilisÃ© par une application Web/PHP.
+La seule chose dont on a besoin câ€™est â€¦ lâ€™interprÃ©teur PHP.
+28. Quels sont des langages de dÃ©veloppement comparable Ã  PHP?
 ASP / ASP.NET
 JSP / J2EE
 Python
 Ruby
-Javascript (AngularJS / NodeJS / …)
+Javascript (AngularJS / NodeJS / â€¦)
 29. Citez 3 framework PHP
 Zend Framework
 CakePHP
@@ -181,23 +181,23 @@ Symphony2
 CodeIgniter / Laravel
 Joomla
 Jelix
-…
-30. Au fait, ça sert à quoi un framework?
-Un framework est un ensemble d'outils et de composants logiciels organisés conformément à un plan
-d'architecture et des patterns, l'ensemble formant ou promouvant éventuellement un « squelette » de
+â€¦
+30. Au fait, Ã§a sert Ã  quoi un framework?
+Un framework est un ensemble d'outils et de composants logiciels organisÃ©s conformÃ©ment Ã  un plan
+d'architecture et des patterns, l'ensemble formant ou promouvant Ã©ventuellement un Â« squelette Â» de
 programme.
-L’objectif est de pouvoir s’appuyer sur un ensemble existant de fonctions, déjà codées/testées/… afin de
-ne pas avoir à recoder ces fonctions, et ainsi gagner du temps. Ne réinventons pas la roue.
+Lâ€™objectif est de pouvoir sâ€™appuyer sur un ensemble existant de fonctions, dÃ©jÃ  codÃ©es/testÃ©es/â€¦ afin de
+ne pas avoir Ã  recoder ces fonctions, et ainsi gagner du temps. Ne rÃ©inventons pas la roue.
 31. Quels sont les types de bases du PHP?
-PHP n’est pas un langage typé. Il n’existe donc aucun type de base.
-Une variable peut « passer » d’un type à un autre au gré de son utilisation.
-32. Produire le code PHP permettant de saisir un prénom sur une page web et d'afficher le message
-suivant: "Bonjour PRENOM, vous exécutez cette page depuis l'adresse ip AAA.BBB.CCC.DDD."
-Note: REMOTE_ADDR est un paramètre qui pourra vous être utile. 
+PHP nâ€™est pas un langage typÃ©. Il nâ€™existe donc aucun type de base.
+Une variable peut Â« passer Â» dâ€™un type Ã  un autre au grÃ© de son utilisation.
+32. Produire le code PHP permettant de saisir un prÃ©nom sur une page web et d'afficher le message
+suivant: "Bonjour PRENOM, vous exÃ©cutez cette page depuis l'adresse ip AAA.BBB.CCC.DDD."
+Note: REMOTE_ADDR est un paramÃ¨tre qui pourra vous Ãªtre utile. 
 Partiel du 14 novembre 2015
-M1 – Semestre 1
+M1 â€“ Semestre 1
 Page 7 MIAGE
-Bases de données réparties
+Bases de donnÃ©es rÃ©parties
 question32.php
 <!doctype html>
 <html lang="fr">
@@ -211,7 +211,7 @@ question32.php
 ?>
  <p>
  Bonjour <?php echo htmlspecialchars($_POST["prenom"]); ?>
- , vous exécutez cette page depuis l'adresse ip <?= $_SERVER['REMOTE_ADDR']; ?>
+ , vous exÃ©cutez cette page depuis l'adresse ip <?= $_SERVER['REMOTE_ADDR']; ?>
  <br/>
  <a href="<?= htmlspecialchars($_SERVER['PHP_SELF']);?>">Recommencer</a>
  </p>
@@ -219,7 +219,7 @@ question32.php
 } else {
 ?>
  <form method="post" action="<?= htmlspecialchars($_SERVER['PHP_SELF']);?>">
- Prénom: <input type="text" name="prenom" /><br/>
+ PrÃ©nom: <input type="text" name="prenom" /><br/>
  <input type="submit" value="OK"/>
  </form>
 <?php
@@ -228,10 +228,10 @@ question32.php
 </body>
 </html>
 Partiel du 14 novembre 2015
-M1 – Semestre 1
+M1 â€“ Semestre 1
 Page 8 MIAGE
-Bases de données réparties
-I– SQL
+Bases de donnÃ©es rÃ©parties
+Iâ€“ SQL
 Soit la table suivante:
 Lumiere
 film Bienvenue chez les Ch'tis
@@ -239,12 +239,67 @@ pays FR
 annee 2008
 realisateurs Dany Boon
 entrees 25520109
-33. Que va afficher la requête suivante
+33. Que va afficher la requÃªte suivante
 SELECT DISTINCT `realisateurs` FROM `Lumiere` where `annee` IN (2008,2010)
-La liste des réalisateurs (sans doublons) ayant réalisé un film produit soit en 2008 soit en 2010.
-34. Ecrivez la requête SQL qui permet d'afficher le nombre d'entrée total fait par réalisateur.
- Le résultat devra être trié du plus grand au plus petit nombre d'entrées.
+La liste des rÃ©alisateurs (sans doublons) ayant rÃ©alisÃ© un film produit soit en 2008 soit en 2010.
+34. Ecrivez la requÃªte SQL qui permet d'afficher le nombre d'entrÃ©e total fait par rÃ©alisateur.
+ Le rÃ©sultat devra Ãªtre triÃ© du plus grand au plus petit nombre d'entrÃ©es.
 SELECT `realisateurs`, SUM(`entrees`) as NbEntreesTotales
 FROM `Lumiere`
 GROUP BY `realisateurs`
 ORDER BY SUM(`entrees`) DESC ; 
+
+1. Dans le cadre d'un systÃ¨me d'information urbanisÃ©, quel est l'intÃ©rÃªt de la cartographie?
+Le fait de matÃ©rialiser lâ€™ensemble des informations de maniÃ¨re structurÃ©e, simplifiÃ©e, lisible et
+comprÃ©hensible par tous va permettre de faciliter le dialogue Ã  diffÃ©rents niveaux :
+â€¢ entre la MOA et la MOE
+â€¢ pour dÃ©finir une trajectoire entre un Ã©tat actuel et une cible dÃ©finie
+â€¢ pour faciliter une Ã©tude dâ€™impact 
+
+5. Quel est l'utilitÃ© d'un middleware?
+RÃ©duire la complexitÃ© du dialogue client/serveur. Cette complexitÃ© est due Ã 
+â€¢ Des SystÃ¨mes hÃ©tÃ©rogÃ¨nes
+â€¢ Des SystÃ¨mes propriÃ©taires
+â€¢ La distance
+
+6. Quel est l'intÃ©rÃªt d'un gestionnaire de sources?
+On peut citer les Ã©lÃ©ments suivants :
+â€¢ Conserver lâ€™historique/la traÃ§abilitÃ© dâ€™un fichier
+â€¢ Fournir la possibilitÃ© de Â« marquer Â» (Â« taguer Â») une version
+â€¢ Permet le partage et lâ€™Ã©change simple dâ€™une solution, facilitant ainsi le travail Ã  plusieurs
+
+7. Citez 2 applications servant de gestionnaires de sources
+On peut citer
+â€¢ CVS
+â€¢ Subversion (SVN)
+â€¢ GIT
+â€¢ Microsoft Visual SourceSafe
+â€¢ Microsoft Team Foundation Server
+â€¢ Rational ClearCase 
+
+Quels sont les types de bases du PHP?
+PHP nâ€™est pas un langage typÃ©. Il nâ€™existe donc aucun type de base.
+Une variable peut Â« passer Â» dâ€™un type Ã  un autre au grÃ© de son utilisation
+
+9. Quels sont les avantages de la mise en Å“uvre d'un systÃ¨me de gestion de bases de donnÃ©es RÃ©parties?
+Les applications voient la base de donnÃ©es comme une seule entitÃ©, mais celle-ci est dÃ©composÃ©e en plusieurs
+Ã©lÃ©ments rÃ©partis sur le rÃ©seau de maniÃ¨re Ã  obtenir les meilleures performances possibles pour les
+utilisateurs. Cette rÃ©partition permet en plus une meilleure extensibilitÃ©, ainsi quâ€™une meilleure disponibilitÃ©.
+10. Quels en sont les inconvÃ©nients?
+La gestion du contrÃ´le des donnÃ©es est complexifiÃ©e par la distribution de celles-ci. Lâ€™administration des
+donnÃ©es sâ€™en trouve tout autant complexifiÃ©e. De plus en cas de migration ou de plan de reprise , il sâ€™agira lÃ aussi de gÃ©rer cette complexitÃ©.
+
+11. Quels sont les Ã©lÃ©ments importants que doit contenir le document explicitant les besoins d'une entreprise
+dans le cadre d'un projet informatique?
+â€¢ Les acteurs / les rÃ´les mÃ©tiers / profils dâ€™utilisateurs
+â€¢ Les donnÃ©es / les grands objets mÃ©tiers
+o Les utilisateurs connaissent souvent trÃ¨s bien les donnÃ©es
+â€¢ Les fonctionnalitÃ©s
+o Que fait-on, que peut-on faire avec les objets identifiÃ©s?
+o Quels sont les cycles de vies de ces objets?
+o Quels sont les processus mis en Å“uvre?
+ Acteurs / Etapes / RÃ´les / DÃ©clencheurs / Validations / RÃ©sultats / â€¦
+â€¢ Les rÃ¨gles mÃ©tiers / les rÃ¨gles de gestion
+â€¢ Les exigences
+o Fonctionnelles
+o Non fonctionnelles: SÃ©curitÃ©, performance, architecture, ergonomie, â€¦
